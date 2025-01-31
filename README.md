@@ -236,11 +236,14 @@ Moving forward, I would consider exploring additional optimisations, such as imp
 
 ### Hotel page
 
-Hotel selected
+#### Hotel selected
+
 ![Screenshot 2025-01-30 at 11 09 27](https://github.com/user-attachments/assets/23038fc4-e4d1-40fc-aac2-178fc207b4b0)
 
-Country selected
+#### Country selected
+
 ![Screenshot 2025-01-30 at 11 11 33](https://github.com/user-attachments/assets/c4aa7260-4acb-4964-abd1-42fc93161f27)
 
-City selected
+#### City selected
+
 ![Screenshot 2025-01-30 at 11 11 59](https://github.com/user-attachments/assets/e1ec4a34-94fc-4fd4-9540-a1c2b476b3bb)
