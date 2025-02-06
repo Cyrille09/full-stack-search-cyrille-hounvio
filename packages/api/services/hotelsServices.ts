@@ -22,7 +22,25 @@ export default {
 
     const hotels = await hotelModel.find(query).sort({ createdAt: -1 });
 
-    return hotels;
+    // Extract unique countries and cities
+    const seenCountries = new Set();
+    const seenCities = new Set();
+    const uniqueCountries = hotels.filter((hotel) => {
+      if (!seenCountries.has(hotel.country)) {
+        seenCountries.add(hotel.country);
+        return true;
+      }
+      return false;
+    });
+    const uniqueCities = hotels.filter((hotel) => {
+      if (!seenCities.has(hotel.city)) {
+        seenCities.add(hotel.city);
+        return true;
+      }
+      return false;
+    });
+
+    return { hotels, uniqueCountries, uniqueCities };
   },
 
   async get(hotelId: string) {
